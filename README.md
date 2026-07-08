@@ -57,7 +57,7 @@ The flow is typically:
 
 ### 1. Detailed flowchart
 
-<img width="2587" height="2463" alt="image" src="https://github.com/user-attachments/assets/5237d36d-7dc2-40f8-bcfa-7f3c9e51d110" />
+<img width="2587" height="2305" alt="619013154-5237d36d-7dc2-40f8-bcfa-7f3c9e51d110" src="https://github.com/user-attachments/assets/d9b5377a-0163-4111-b93d-bf8dac7ff8fc" />
 
 
 ### 2. Long vertical flowchart

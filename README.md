@@ -156,3 +156,8 @@ This project is published under the GNU General Public License v3.0. See the [LI
 ## Contact
 
 For questions, feedback, or collaboration ideas, open an issue or contact the repository maintainer.
+
+<hr>
+<p align="center">
+  <small>Made with 🤍 by <a href="https://github.com/yamanist0">yamanist</a></small>
+</p>

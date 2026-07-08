@@ -4,7 +4,6 @@
 
 Windows education focused proof of concept that exhibits process hollowing. It creates a suspended process, unmaps its image, maps the PE file chosen in its address space, and resumes its execution. Process hollowing is exhibited in C, C++, and Python, thus this PoC should be relatively easy to explore.
 
-> Suggested GitHub repository name: process-hollowing-poc
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)]()
@@ -58,9 +57,12 @@ The flow is typically:
 
 ### 1. Detailed flowchart
 
+<img width="2587" height="2463" alt="image" src="https://github.com/user-attachments/assets/5237d36d-7dc2-40f8-bcfa-7f3c9e51d110" />
+
 
 ### 2. Long vertical flowchart
 
+<img width="3096" height="8192" alt="Br Proces Flow-2026-07-08-192723" src="https://github.com/user-attachments/assets/d84d60f5-4148-40e3-9d5b-4eaf07cf3a91" />
 
 
 ## Defensive Countermeasures

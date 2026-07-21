@@ -139,7 +139,7 @@ BOOL UnmapProcessImage(PROCESS_INFORMATION* pi, DWORD64* pebAddress, DWORD64* im
     SIZE_T bytesRead = 0;
     if (!ReadProcessMemory(pi->hProcess, (LPCVOID)(*pebAddress + 0x10),
                            &imgBase, sizeof(imgBase), &bytesRead)) {
-        fprintf(stderr, "  [!] ReadProcessMemory failed. Error: %lu\n", GetLastError());
+fprintf(stderr, "  oh no, reading process memory failed. error code is %lu\n", GetLastError());
         return FALSE;
     }
     *imageBase = imgBase;

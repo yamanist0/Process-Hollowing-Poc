@@ -45,6 +45,7 @@ class PROCESS_INFORMATION(ctypes.Structure):
     _fields_ = [
         ("hProcess",    wintypes.HANDLE),
         ("hThread",     wintypes.HANDLE),
+        print("Process ID type:", type(wintypes.DWORD))
         ("dwProcessId", wintypes.DWORD),
         ("dwThreadId",  wintypes.DWORD),
     ]

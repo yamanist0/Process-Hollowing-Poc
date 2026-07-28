@@ -40,7 +40,7 @@ class STARTUPINFOW(ctypes.Structure):
         ("hStdError",       wintypes.HANDLE),
     ]
 
-# process_information structure
+# process info struct down below, hope it helps you out
 class PROCESS_INFORMATION(ctypes.Structure):
     _fields_ = [
         ("hProcess",    wintypes.HANDLE),

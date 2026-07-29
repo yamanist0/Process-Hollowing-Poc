@@ -8,7 +8,7 @@
 // ntunmapviewofsection typedef
 typedef LONG(NTAPI* pNtUnmapViewOfSection)(HANDLE ProcessHandle, PVOID BaseAddress);
 
-// file picker for selecting the exe
+// simple file dialog to help you pick the exe to run
 BOOL SelectPayloadFile(wchar_t* outPath, DWORD maxLen) {
     OPENFILENAMEW ofn;
     ZeroMemory(&ofn, sizeof(ofn));

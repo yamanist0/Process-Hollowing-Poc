@@ -51,6 +51,7 @@ class PROCESS_INFORMATION(ctypes.Structure):
     ]
 
 # context structure
+print("Initializing CONTEXT64 structure")
 class CONTEXT64(ctypes.Structure):
     _fields_ = [
         ("P1Home",              ctypes.c_uint64),

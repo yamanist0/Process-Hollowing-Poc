@@ -82,7 +82,7 @@ std::vector<BYTE> ReadFileToMemory(const std::wstring& path) {
 }
 
 // spawns svchost.exe in suspended state
-bool CreateSuspendedProcess(const wchar_t* targetExe, PROCESS_INFORMATION& pi) {
+bool CreateSuspended(const wchar_t* targetExe, PROCESS_INFORMATION& pi) {
     STARTUPINFOW si = {};
     si.cb = sizeof(si);
 

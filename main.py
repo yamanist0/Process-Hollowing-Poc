@@ -102,7 +102,7 @@ class CONTEXT64(ctypes.Structure):
         ("LastExceptionFromRip",ctypes.c_uint64),
     ]
 
-# createprocessw function signature
+# setting up the createprocessw function here
 kernel32.CreateProcessW.restype = wintypes.BOOL
 kernel32.CreateProcessW.argtypes = [
     wintypes.LPCWSTR,                # lpApplicationName

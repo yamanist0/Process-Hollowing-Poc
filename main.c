@@ -144,7 +144,7 @@ fprintf(stderr, "  oh no, reading process memory failed. error code is %lu\n", G
     }
     *imageBase = imgBase;
 
-    // get ntunmapviewofsection from ntdll at runtime
+// grab NtUnmapViewOfSection from ntdll while running
     HMODULE hNtdll = GetModuleHandleW(L"ntdll.dll");
     if (!hNtdll) {
         fprintf(stderr, "  [!] Failed to get ntdll handle.\n");

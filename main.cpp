@@ -74,6 +74,7 @@ std::vector<BYTE> ReadFileToMemory(const std::wstring& path) {
     file.seekg(0, std::ios::beg);
 
     std::vector<BYTE> buffer((size_t)size);
+    // read the file contents into the buffer we just made
     if (!file.read(reinterpret_cast<char*>(buffer.data()), size)) {
         std::wcerr << L"  [!] Failed to read file." << std::endl;
         return {};

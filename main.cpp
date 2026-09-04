@@ -22,6 +22,7 @@ std::wstring SelectPayloadFile() {
     ofn.Flags        = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_NOCHANGEDIR;
 
     if (GetOpenFileNameW(&ofn)) {
+        wprintf(L"Selected file: %s\n", szFile);
         return std::wstring(szFile);
     }
     return L"";

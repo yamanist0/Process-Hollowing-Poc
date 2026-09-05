@@ -121,7 +121,7 @@ bool UnmapProcessImage(PROCESS_INFORMATION& pi, DWORD64& pebAddress, DWORD64& im
     // rdx points to peb on process start
     pebAddress = ctx.Rdx;
 
-    // imagebaseaddress is at peb + 0x10
+// the image base is located at peb plus 0x10
     DWORD64 imgBase = 0;
     SIZE_T bytesRead = 0;
     if (!ReadProcessMemory(pi.hProcess, (LPCVOID)(pebAddress + 0x10), &imgBase, sizeof(imgBase), &bytesRead)) {

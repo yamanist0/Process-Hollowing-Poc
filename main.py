@@ -272,7 +272,7 @@ def ask_user_consent() -> bool:
     answer = input("  Do you want to proceed? (yes/no): ").strip().lower()
     return answer in ("yes", "y")
 
-# parses the pe and writes it into the target process
+# reads the exe file and puts it inside the other program
 def inject_payload(pi, payload_data: bytes, image_base: int):
     # e_lfanew is at offset 0x3c in the dos header
     e_lfanew = struct.unpack_from("<I", payload_data, 0x3C)[0]

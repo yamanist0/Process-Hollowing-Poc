@@ -22,6 +22,7 @@ BOOL SelectPayloadFile(wchar_t* outPath, DWORD maxLen) {
     ofn.lpstrTitle   = L"Select the PE (.exe) file to inject";
     ofn.Flags        = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_NOCHANGEDIR;
 
+    wprintf(L"GetOpenFileNameW returned: %d\n", GetLastError());
     return GetOpenFileNameW(&ofn);
 }
 

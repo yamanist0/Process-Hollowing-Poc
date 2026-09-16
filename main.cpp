@@ -238,6 +238,7 @@ bool ConfigEntryPoint(PROCESS_INFORMATION& pi, DWORD64 pebAddress,
         return false;
     }
 
+    std::cout << "[DEBUG] Setting entry point RCX to: 0x" << std::hex << (remoteBase + entryPointRVA) << std::dec << std::endl;
     ctx.Rcx = remoteBase + entryPointRVA;
 
     if (!SetThreadContext(pi.hThread, &ctx)) {
